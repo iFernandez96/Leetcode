@@ -2,6 +2,8 @@
  * @param {number} n
  * @return {Function} counter
  */
+
+// Success
 var createCounter = function(n) {
     let num = n;
     return function() {
@@ -14,6 +16,6 @@ var createCounter = function(n) {
 /** 
  * const counter = createCounter(10)
  * counter() // 10
- * counter() // 11
+ * counter() // 11ss;
  * counter() // 12
  */
