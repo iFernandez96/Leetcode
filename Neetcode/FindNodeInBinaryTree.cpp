@@ -33,7 +33,7 @@ public:
 
             if (node->right != nullptr) {
                 d.push_back(node->right);
-                d_c.push_back(node->right);
+                d_c.push_back(c_node->right);
             }
         }
         return nullptr;
