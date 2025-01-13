@@ -3,7 +3,20 @@
  * @return {Object}
  */
 let expect = (val) => {
-    
+    return () => {
+        toBe: (val2) => {
+            if (val !== val2) {
+                throw new Error("Not Equal");
+            }
+            return true;
+        };
+        notToBe: (val3) => {
+            if (val === val3) {
+                throw new Error("Equal");
+            }
+            return true;
+        };
+    };
 };
 
 /**
