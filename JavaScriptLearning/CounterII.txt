@@ -8,13 +8,16 @@ var createCounter = function(init) {
 
     function increment() {
         num++;
+        return num;
     }
     function decrement() {
         num--;
+        return num;
     }
 
     function reset() {
         num = initial;
+        return num;
     }
 };
 
